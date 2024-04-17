@@ -8,10 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      backgroundImage: {},
+      colors: {
+        primaryAccent: "#2E68DD",
+        secondaryAccent: "#212F52",
+        primaryBg: "#020315",
+        secondaryBg: "#454A5C",
+      },
+      spacing: {
+        wrapperWidth: "clamp(16rem, 93vw, 75rem)",
+        wrapperPadding: "clamp(1.09rem, 1rem + 0.47vw, 1.33rem)",
+      },
+      animation: {
+        "spin-slow": "spin 50s linear infinite",
       },
     },
   },
