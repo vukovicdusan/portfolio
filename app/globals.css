@@ -11,7 +11,7 @@
   --color-light-shade: #f7f7f7;
   --color-primary: #ff006a;
   --color-primary-glare: #ffeff6;
-  --color-secondary: #7c72ff;
+  --color-secondary: #6e40c9;
   --color-tertiary: #00ffd4;
   --color-quaternary: #ffd501;
   --color-quinary: #00d5ff;
@@ -27,10 +27,22 @@
 }
 
 body {
+  background-color: var(--color-dark);
+  color: var(--color-light-shade);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-secondaryAccent hover:bg-primaryAccent text-white font-bold py-2 px-4 rounded-md transition-colors relative;
+  }
+
+  .wrapper {
+    @apply w-wrapperWidth p-wrapperPadding mx-auto;
   }
 }

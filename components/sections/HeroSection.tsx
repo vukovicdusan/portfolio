@@ -2,8 +2,8 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="mx-auto w-wrapperWidth p-wrapperPadding">
-      <p>
+    <div className="wrapper">
+      <p className="font-light">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsa
         corporis! Totam assumenda praesentium omnis ipsa, non ullam modi quae
         incidunt, atque voluptatem veniam cumque sint at voluptates quod ea
@@ -15,6 +15,7 @@ const HeroSection = () => {
         vitae et? Quisquam dolorem sequi itaque ab suscipit commodi, maxime,
         possimus qui numquam pariatur quia, cumque repellat beatae voluptas.
       </p>
+      <button className="btn-primary">Testing</button>
     </div>
   );
 };

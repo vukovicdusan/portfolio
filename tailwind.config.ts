@@ -10,10 +10,14 @@ const config: Config = {
     extend: {
       backgroundImage: {},
       colors: {
-        primaryAccent: "#2E68DD",
-        secondaryAccent: "#212F52",
-        primaryBg: "#020315",
-        secondaryBg: "#454A5C",
+        primaryAccent: "var(--color-primary)",
+        secondaryAccent: "var(--color-secondary)",
+        tertiaryAccent: "var(--color-tertiary)",
+        quaternaryAccent: "var(--color-quaternary)",
+        quinaryAccent: "var(--color-quinary)",
+        darkColor: "var(--color-dark)",
+        midColor: "var(--color-mid)",
+        lightColor: "var(--color-light)",
       },
       spacing: {
         wrapperWidth: "clamp(16rem, 93vw, 75rem)",
