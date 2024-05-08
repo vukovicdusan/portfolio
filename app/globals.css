@@ -39,10 +39,14 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply bg-secondaryAccent hover:bg-primaryAccent text-white font-bold py-2 px-4 rounded-md transition-colors relative;
+    @apply bg-secondaryAccent hover:bg-primaryAccent text-white font-bold py-2 px-4 rounded-md  relative;
   }
 
   .wrapper {
     @apply w-wrapperWidth p-wrapperPadding mx-auto;
+  }
+
+  .stack {
+    @apply flex flex-col gap-2;
   }
 }
