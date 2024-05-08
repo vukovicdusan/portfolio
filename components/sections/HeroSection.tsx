@@ -40,12 +40,12 @@ const HeroSection = () => {
               <use xlinkHref={`./images/sprite.svg#pointer`}></use>
             </svg>
           </div>
-          <button className="btn-primary ml-4">
+          <a href="#websites" className="btn-primary ml-4">
             Check Work{" "}
             <svg className="fill-white w-5 h-5 rotate-180 inline-block ml-1">
               <use xlinkHref={`./images/sprite.svg#pointer`}></use>
             </svg>
-          </button>
+          </a>
         </div>
         {/* <span className="block w-full h-1 bg-white mx-auto my-16"></span> */}
         <svg className="absolute fill-slate-800 opacity-30 left-1/4 top-1/3 h-full w-full animate-spin-slow -z-10 ">

@@ -2,15 +2,22 @@ import React from "react";
 import Window from "../Window";
 
 const PortfolioSection = () => {
+  let websitesArr = [
+    "https://www.wlastig.com/",
+    "https://www.bojeart.com/",
+    "https://www.vet4pets.rs/",
+    "https://volimtapete.me",
+    "https://www.nutrilogika.rs/",
+    "https://www.vladimirmilic.com/",
+    "https://www.thedatawiz.co/",
+    "https://www.milicajanevski.rs/",
+    "https://www.sandracvijovic.com/",
+  ];
   return (
-    <div className="wrapper h-svh">
-      <Window url={"https://www.wlastig.com/"}></Window>
-      <Window url={"https://www.bojeart.com/"}></Window>
-      <Window url={"https://www.vet4pets.rs/"}></Window>
-      <Window url={"https://volimtapete.me"}></Window>
-      <Window url={"https://www.thedatawiz.co/"}></Window>
-      <Window url={"https://www.milicajanevski.rs/"}></Window>
-      <Window url={"https://www.sandracvijovic.com/"}></Window>
+    <div id="websites" className="wrapper h-auto">
+      {websitesArr.map((el, index) => (
+        <Window key={index} url={el}></Window>
+      ))}
     </div>
   );
 };
