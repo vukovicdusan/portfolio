@@ -57,7 +57,10 @@ const Window = (props: WindowPropsType) => {
           fade ? "opacity-100" : "opacity-0"
         } transition-opacity duration-1000`}
       >
-        <div className="mx-auto" style={{ width: resizeValue + "%" }}>
+        <div
+          className="mx-auto"
+          style={{ width: resizeValue + "%", minWidth: "360px" }}
+        >
           <iframe
             className={`window w-full h-[70vh] outline-none ${
               active ? "" : "pointer-events-none"
@@ -75,7 +78,7 @@ const Window = (props: WindowPropsType) => {
           </button>
         )}
 
-        <div className="absolute flex flex-col justify-center items-center bottom-0 left-1/2 -translate-x-1/2 bg-quaternaryAccent py-2 px-4 rounded-md">
+        <div className="absolute sm:flex flex-col justify-center items-center bottom-0 left-1/2 -translate-x-1/2 bg-quaternaryAccent py-2 px-4 rounded-md hidden">
           <label htmlFor="resize-control" className="font-bold text-darkColor">
             Resize
           </label>
