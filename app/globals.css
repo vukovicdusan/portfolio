@@ -33,6 +33,29 @@ body {
   font-family: var(--mona);
 }
 
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+  /* height: 13px; */
+  touch-action: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: var(--color-light);
+  border-radius: 24px;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+input[type="range"]::-moz-range-track {
+  /* animate: 0.2s; */
+  background: var(--color-light);
+  cursor: pointer;
+  height: 2px;
+  width: 100%;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -41,11 +64,11 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply bg-secondaryAccent hover:bg-primaryAccent text-white font-bold py-2 px-4 rounded-md  relative;
+    @apply bg-secondaryAccent hover:bg-primaryAccent text-white font-bold py-2 px-4 rounded-md relative;
   }
 
   .wrapper {
-    @apply w-wrapperWidth p-wrapperPadding mx-auto;
+    @apply w-wrapperWidth p-wrapperPadding mx-auto mb-16;
   }
 
   .stack {

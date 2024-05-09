@@ -7,7 +7,7 @@ const Header = () => {
         <ul className="flex gap-4 justify-center">
           <li>
             <a
-              className="text-quaternaryAccent hover:text-primaryAccent"
+              className="font-bold text-quaternaryAccent hover:text-primaryAccent"
               href="#websites"
             >
               Works
@@ -15,7 +15,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              className="text-quaternaryAccent hover:text-primaryAccent"
+              className="font-bold text-quaternaryAccent hover:text-primaryAccent"
               href="#about"
             >
               About
@@ -23,7 +23,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              className="text-quaternaryAccent hover:text-primaryAccent"
+              className="font-bold text-quaternaryAccent hover:text-primaryAccent"
               href="#contact"
             >
               Contact

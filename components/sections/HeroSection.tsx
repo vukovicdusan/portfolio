@@ -2,16 +2,16 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-full overflow-hidden">
+    <div className="w-full h-full ">
       <div className="wrapper relative">
         <h1 className="font-extrabold font-cubano text-center text-6xl mb-8">
-          Your
+          <span className="inline-block -translate-y-1">Yo</span>ur
           <br />
           <span className="text-tertiaryAccent">
             <span className="inline-block translate-y-1">Front</span>-End
           </span>
           <br />
-          <span className="inline-block translate-y-1">Devel</span>oper
+          <span className="inline-block -translate-y-1">Devel</span>oper
         </h1>
         <p className="text-2xl font-cubano max-w-prose text-center mx-auto mb-4">
           Hey there, I&apos;m Dusan!
@@ -33,7 +33,7 @@ const HeroSection = () => {
 
         <div className="flex flex-col justify-center items-center">
           <div>
-            <p className="font-cubano text-lg">
+            <p className="font-cubano text-lg text-center">
               Check my work by clicking on this utterly pointless button{" "}
             </p>
             <p className="text-sm text-center">

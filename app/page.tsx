@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Header></Header>
-      <main className="flex min-h-screen flex-col items-center justify-between">
+      <main className="relative flex min-h-screen flex-col items-center justify-between overflow-hidden">
         <HeroSection></HeroSection>
         <AboutSection></AboutSection>
         <PortfolioSection></PortfolioSection>
