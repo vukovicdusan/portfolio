@@ -13,9 +13,9 @@ const AboutSection = () => {
           Belgrade, Serbia.
         </h3>
         <p>
-          Problem-solving and creativity are what drives me and gets me out of
-          the bed in the morning, the continuous learning comes along for the
-          ride. I find deep fulfillment in building and refining web solutions.
+          Problem-solving and creativity are what drive me and get me out of bed
+          in the morning; continuous learning comes along for the ride. I find
+          deep fulfillment in building and refining web solutions.
         </p>
       </div>
       <div className="text-center">
@@ -26,9 +26,8 @@ const AboutSection = () => {
         <p>
           I try to keep things light so that users get your content{" "}
           <span className="text-2xl font-cubano">fast</span> and with small
-          bandwith costs. We talk about what realy matters to you and then
-          filter your content, making it straight to the point, light and easy
-          to use.
+          bandwith costs. We discuss what realy matters to you and then filter
+          your content, making it straightforward, light, and easy to use.
         </p>
       </div>
       <div className="text-center">
@@ -38,11 +37,11 @@ const AboutSection = () => {
           <span className="text-secondaryAccent text-4xl">anyone</span>.
         </h3>
         <p>
-          <span className="font-cubano text-2xl">Everyone</span> should get a
-          good web experience whatever the{" "}
+          <span className="font-cubano text-2xl">Everyone</span> should have a
+          good web experience regardless of the the{" "}
           <span className="font-cubano text-2xl">device</span> and{" "}
-          <span className="font-cubano text-2xl">conectivity</span> is being
-          used. Your content must be delivered to the user no mather what.{" "}
+          <span className="font-cubano text-2xl">conectivity</span> being used.
+          Your content must be delivered to the user no mather what.{" "}
         </p>
       </div>
     </div>

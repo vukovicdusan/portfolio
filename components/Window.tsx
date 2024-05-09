@@ -80,7 +80,7 @@ const Window = (props: WindowPropsType) => {
 
         <div className="absolute sm:flex flex-col justify-center items-center bottom-0 left-1/2 -translate-x-1/2 bg-quaternaryAccent py-2 px-4 rounded-md hidden">
           <label htmlFor="resize-control" className="font-bold text-darkColor">
-            Resize
+            Resize window
           </label>
           <input
             onChange={(e) => resizeControlHandler(e)}
