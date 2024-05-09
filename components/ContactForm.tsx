@@ -1,8 +1,7 @@
 "use client";
-import React, { useState } from "react";
-import Button from "./Button";
-import Spinner from "./Spinner";
 import useInput from "@/hooks/useInput";
+import React, { useState } from "react";
+import Spinner from "./Spinner";
 
 type TResponseState = {
   message: string;
@@ -10,16 +9,16 @@ type TResponseState = {
 };
 
 type CtaContentPropType = {
-  id: string;
-  title: string;
-  subtitle: string;
-  list: string[];
-  ctaButton: string;
+  id?: string;
+  title?: string;
+  subtitle?: string;
+  list?: string[];
+  ctaButton?: string;
 };
 
-const CtaForm = (props: CtaContentPropType) => {
+const ContactForm = (props: CtaContentPropType) => {
   const [inputValue, valueHandler] = useInput();
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
 
   const [responseState, setResponseState] = useState<TResponseState>({
     message: "initial_state",
@@ -55,11 +54,11 @@ const CtaForm = (props: CtaContentPropType) => {
     <form
       id={props.id}
       onSubmit={onSubmitHandler}
-      className="flex flex-col gap-6  pt-2"
+      className="flex flex-col gap-6 pt-2 max-w-prose mx-auto"
     >
       <div className="relative flex flex-col w-full">
         <input
-          className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-secondaryAccent border border-white"
+          className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-darkColor border-2 border-white"
           type="text"
           name="name"
           id="name"
@@ -69,7 +68,7 @@ const CtaForm = (props: CtaContentPropType) => {
           onChange={(e) => valueHandler(e)}
         />
         <label
-          className={`absolute text-primaryAccent bg-secondaryAccent left-4 px-2 transition-all duration-200 ease-linear peer-focus:-top-1 peer-focus:text-sm ${
+          className={`font-cubano absolute bg-darkColor left-4 px-2 transition-all duration-200 ease-linear peer-focus:-top-1 peer-focus:text-sm ${
             inputChecker("name")
               ? "top-1/2 -translate-y-1/2"
               : "-translate-y-1/2"
@@ -81,7 +80,7 @@ const CtaForm = (props: CtaContentPropType) => {
       </div>
       <div className="relative flex flex-col w-full">
         <input
-          className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-secondaryAccent border border-white"
+          className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-darkColor border-2 border-white"
           type="text"
           name="email"
           id="email"
@@ -92,7 +91,7 @@ const CtaForm = (props: CtaContentPropType) => {
           onChange={(e) => valueHandler(e)}
         />
         <label
-          className={`absolute text-primaryAccent bg-secondaryAccent left-4 px-2 transition-all duration-200 ease-linear peer-focus:-top-1 peer-focus:text-sm ${
+          className={`font-cubano absolute bg-darkColor left-4 px-2 transition-all duration-200 ease-linear peer-focus:-top-1 peer-focus:text-sm ${
             inputChecker("email")
               ? "top-1/2 -translate-y-1/2"
               : "-translate-y-1/2"
@@ -104,7 +103,7 @@ const CtaForm = (props: CtaContentPropType) => {
       </div>
       <div className="relative flex flex-col w-full">
         <input
-          className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-secondaryAccent border border-white"
+          className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-darkColor border-2 border-white"
           type="text"
           name="website"
           id="website"
@@ -113,7 +112,7 @@ const CtaForm = (props: CtaContentPropType) => {
           onChange={(e) => valueHandler(e)}
         />
         <label
-          className={`absolute text-primaryAccent bg-secondaryAccent left-4 px-2 transition-all duration-200 ease-linear peer-focus:-top-1 peer-focus:text-sm ${
+          className={`font-cubano absolute bg-darkColor left-4 px-2 transition-all duration-200 ease-linear peer-focus:-top-1 peer-focus:text-sm ${
             inputChecker("website")
               ? "top-1/2 -translate-y-1/2"
               : "-translate-y-1/2"
@@ -125,39 +124,39 @@ const CtaForm = (props: CtaContentPropType) => {
       </div>
       <div className="relative flex flex-col w-full">
         <textarea
-          className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-secondaryAccent border border-white"
+          className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-darkColor border-2 border-white"
           name="message"
           id="message"
           autoCapitalize="none"
           autoCorrect="off"
-          title="Leave a message if you want."
+          title="Leave a message, it would be nice."
           onChange={(e) => valueHandler(e)}
         />
         <label
-          className={`absolute text-primaryAccent bg-secondaryAccent left-4 px-2 transition-all duration-200 ease-linear peer-focus:text-sm peer-focus:-top-3 ${
+          className={`font-cubano absolute bg-darkColor left-4 px-2 transition-all duration-200 ease-linear peer-focus:text-sm peer-focus:-top-3 ${
             // inputValue.message && Object.values(inputValue.message).length === 0
             inputChecker("message") ? "top-3" : "-top-3"
           }`}
           htmlFor="message"
         >
-          Message (optional)
+          Message
         </label>
       </div>
       {responseState.message !== "initial_state" ? (
         <p
-          className={`font-bold ${
+          className={`font-bold text-center ${
             responseState.success ? "text-green-500" : "text-red-500"
           }`}
         >
           {responseState.message}
         </p>
       ) : null}
-      <div className="flex gap-2 items-center">
-        <Button>{props.ctaButton}</Button>
+      <div className="flex gap-2 items-center justify-center">
+        <button className="btn-primary">{props.ctaButton}</button>
         {loading ? <Spinner></Spinner> : null}
       </div>
     </form>
   );
 };
 
-export default CtaForm;
+export default ContactForm;

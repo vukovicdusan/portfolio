@@ -2,15 +2,15 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div id="#about" className="wrapper stack gap-6 max-w-prose">
+    <div id="about" className="wrapper stack gap-6 max-w-prose">
       <h2 className="font-cubano text-5xl text-quaternaryAccent text-center">
         About <span className="inline-block -translate-y-1">me</span>
       </h2>
       <div className="text-center">
         <h3 className="text-lg font-cubano mb-2">
           I&apos;m a freelance web{" "}
-          <span className="text-secondaryAccent">developer</span> coming from
-          Belgrade, Serbia.
+          <span className="text-secondaryAccent text-4xl">developer</span>{" "}
+          coming from Belgrade, Serbia.
         </h3>
         <p>
           Problem-solving and creativity are what drive me and get me out of bed

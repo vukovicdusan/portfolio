@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --color-dark: #030303;
+  /* --color-dark: #030303; */
+  --color-dark: rgb(18 24 27 / 1);
   --color-dark-glare: #171717;
   --color-mid: #444;
   --color-mid-glare: #ccc;
@@ -67,7 +68,7 @@ input[type="range"]::-moz-range-track {
 
 @layer components {
   .btn-primary {
-    @apply bg-secondaryAccent hover:bg-primaryAccent text-white font-bold py-2 px-4 rounded-md relative;
+    @apply font-cubano bg-secondaryAccent hover:bg-primaryAccent text-white font-bold py-2 px-4 rounded-md relative;
   }
 
   .wrapper {
