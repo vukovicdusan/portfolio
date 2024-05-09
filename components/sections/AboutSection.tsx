@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div id="about" className="wrapper stack gap-10 max-w-prose">
+    <div id="about" className="relative wrapper stack gap-10 max-w-prose">
       <h2 className="font-cubano text-5xl text-quaternaryAccent text-center">
         About <span className="inline-block -translate-y-1">me</span>
       </h2>
@@ -74,6 +74,28 @@ const AboutSection = () => {
           <span className="font-cubano text-lg">vanilla</span> HTML, CSS, & JS.
         </p>
       </div>
+      <div className="mx-auto w-24 h-1 my-12 bg-gradient-to-r from-gray5 to-gray4 rounded-full"></div>
+      <div className="stack text-center">
+        <p className="font-cubano">
+          If I&apos;ve already won you over with my fantastic &apos;about&apos;
+          content, feel free to
+          <span className="text-quaternaryAccent text-lg"> hire me</span>!
+        </p>
+        <div className="animate-bounce">
+          <svg className="fill-white w-10 h-10 rotate-180 inline-block my-4 ">
+            <use xlinkHref={`./images/sprite.svg#pointer`}></use>
+          </svg>
+        </div>
+        <a href="#contact" className="btn-primary max-w-max mx-auto">
+          Contact me{" "}
+          <svg className="fill-white w-5 h-5 rotate-180 inline-block ml-1">
+            <use xlinkHref={`./images/sprite.svg#pointer`}></use>
+          </svg>
+        </a>
+      </div>
+      <svg className="absolute fill-slate-800 opacity-30 right-1/4 top-1/3 h-full w-full animate-spin-slow -z-10 ">
+        <use xlinkHref={`./images/sprite.svg#smiley-2`}></use>
+      </svg>
     </div>
   );
 };
