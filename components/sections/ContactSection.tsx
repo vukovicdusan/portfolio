@@ -6,7 +6,7 @@ const ContactSection = () => {
     <div id="contact" className="wrapper">
       <div className="stack gap-4 max-w-prose mx-auto mb-8 text-center">
         <h2 className="font-cubano text-5xl text-secondaryAccent">
-          Let's talk!
+          Let&apos;s talk!
         </h2>
         <p>
           Yes, I&apos;ve mastered the{" "}
