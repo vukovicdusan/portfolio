@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <div className="w-full h-full overflow-hidden">
       <div className="wrapper relative">
-        <h1 className="font-extrabold text-center text-6xl mb-8">
+        <h1 className="font-extrabold font-cubano text-center text-6xl mb-8">
           Your
           <br />
           <span className="text-tertiaryAccent">
@@ -13,14 +13,19 @@ const HeroSection = () => {
           <br />
           <span className="inline-block translate-y-1">Devel</span>oper
         </h1>
-        <p className="text-2xl max-w-prose text-center mx-auto mb-4">
+        <p className="text-2xl font-cubano max-w-prose text-center mx-auto mb-4">
           Hey there, I&apos;m Dusan!
         </p>
-        <p className="text-lg max-w-prose text-center mx-auto mb-4">
+        <p className="text-lg max-w-prose text-center mx-auto">
           Sadly, my designer got ill while I was crafting this{" "}
           <span className="text-quaternaryAccent">react</span> overkill website.
-          But worry not! You can feast your eyes on some of masterpieces I
-          designed myself.
+        </p>
+        <p className="text-xl font-cubano max-w-prose text-center mx-auto">
+          But worry not!
+        </p>
+        <p className="text-lg max-w-prose text-center mx-auto mb-4">
+          You can feast your eyes on some of masterpieces I designed and created
+          myself.
         </p>
         <p className="text-sm text-primaryAccent mb-20 text-center">
           (Thank you, ChatGPT, for this great intro)
@@ -28,7 +33,7 @@ const HeroSection = () => {
 
         <div className="flex flex-col justify-center items-center">
           <div>
-            <p className="text-lg font-bold">
+            <p className="font-cubano text-lg">
               Check my work by clicking on this utterly pointless button{" "}
             </p>
             <p className="text-sm text-center">

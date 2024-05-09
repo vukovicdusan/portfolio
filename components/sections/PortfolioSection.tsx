@@ -4,13 +4,13 @@ import Window from "../Window";
 const PortfolioSection = () => {
   let websitesArr = [
     "https://www.wlastig.com/",
-    "https://www.bojeart.com/",
     "https://www.vet4pets.rs/",
+    "https://www.bojeart.com/",
     "https://volimtapete.me",
+    "https://www.milicajanevski.rs/",
     "https://www.nutrilogika.rs/",
     "https://www.vladimirmilic.com/",
     "https://www.thedatawiz.co/",
-    "https://www.milicajanevski.rs/",
     "https://www.sandracvijovic.com/",
   ];
   return (

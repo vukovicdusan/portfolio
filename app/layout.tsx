@@ -3,6 +3,15 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+const cubano = localFont({
+  src: [
+    {
+      path: "../public/fonts/Cubano.ttf",
+    },
+  ],
+  variable: "--cubano",
+  display: "swap",
+});
 const mona = localFont({
   src: [
     {
@@ -15,17 +24,9 @@ const mona = localFont({
       weight: "400",
       style: "normal",
     },
-    {
-      path: "../public/fonts/Mona-Sans-Medium.woff2",
-      weight: "500",
-      style: "medium",
-    },
-    {
-      path: "../public/fonts/Mona-Sans-Bold.woff2",
-      weight: "700",
-      style: "bold",
-    },
   ],
+  variable: "--mona",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -40,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={mona.className}>{children}</body>
+      <body className={`${mona.variable} ${cubano.variable}`}>{children}</body>
     </html>
   );
 }
