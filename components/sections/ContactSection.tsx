@@ -9,7 +9,7 @@ const ContactSection = () => {
           Let's talk!
         </h2>
         <p>
-          Yes, I've mastered the{" "}
+          Yes, I&apos;ve mastered the{" "}
           <span className="font-cubano text-primaryAccent text-2xl">
             mystical arts
           </span>{" "}
