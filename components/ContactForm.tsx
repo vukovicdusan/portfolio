@@ -18,7 +18,7 @@ type CtaContentPropType = {
 
 const ContactForm = (props: CtaContentPropType) => {
   const [inputValue, valueHandler] = useInput();
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const [responseState, setResponseState] = useState<TResponseState>({
     message: "initial_state",
