@@ -14,7 +14,10 @@ const PortfolioSection = () => {
     "https://www.sandracvijovic.com/",
   ];
   return (
-    <div id="websites" className="wrapper h-auto">
+    <div id="websites" className="sm:wrapper h-auto stack gap-10">
+      <h2 className="font-cubano text-5xl text-quaternaryAccent text-center">
+        Work
+      </h2>
       {websitesArr.map((el, index) => (
         <Window key={index} url={el}></Window>
       ))}

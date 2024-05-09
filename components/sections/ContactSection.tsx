@@ -4,7 +4,7 @@ import ContactForm from "../ContactForm";
 const ContactSection = () => {
   return (
     <div id="contact" className="wrapper">
-      <div className="stack gap-4 max-w-prose mx-auto mb-8 text-center">
+      <div className="stack gap-4 max-w-prose mx-auto mb-10 text-center">
         <h2 className="font-cubano text-5xl text-secondaryAccent">
           Let&apos;s talk!
         </h2>

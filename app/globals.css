@@ -64,6 +64,20 @@ input[type="range"]::-moz-range-track {
   .text-balance {
     text-wrap: balance;
   }
+
+  .from-gray5 {
+    --tw-gradient-from: #454e56;
+    --tw-gradient-to: rgb(69 78 86 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .to-gray4 {
+    --tw-gradient-to: #6c7983;
+  }
+
+  .bg-gradient-to-r {
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+  }
 }
 
 @layer components {
