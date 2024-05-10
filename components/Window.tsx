@@ -3,6 +3,7 @@ import React, { ChangeEvent, useEffect, useRef, useState } from "react";
 
 type WindowPropsType = {
   url: string;
+  description: string;
 };
 
 const Window = (props: WindowPropsType) => {
@@ -50,10 +51,10 @@ const Window = (props: WindowPropsType) => {
   };
 
   return (
-    <>
+    <div>
       <div
         ref={windowRef}
-        className={`relative mb-24 ${
+        className={`relative  ${
           fade ? "opacity-100" : "opacity-0"
         } transition-opacity duration-1000`}
       >
@@ -95,7 +96,10 @@ const Window = (props: WindowPropsType) => {
           />
         </div>
       </div>
-    </>
+      <div className="mb-24 mt-4 text-center max-w-prose mx-auto">
+        <p className="text-lg">{props.description}</p>
+      </div>
+    </div>
   );
 };
 
