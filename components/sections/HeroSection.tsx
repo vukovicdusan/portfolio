@@ -30,7 +30,7 @@ const HeroSection = () => {
           </p>
           <p className="text-lg max-w-prose text-center mx-auto">
             Sadly, my designer got ill while I was crafting this{" "}
-            <span className="text-quaternaryAccent font-cubano">react</span>{" "}
+            <span className="text-quinaryAccent font-cubano">react</span>{" "}
             overkill website.
           </p>
           <p className="text-xl font-cubano max-w-prose text-center mx-auto">
