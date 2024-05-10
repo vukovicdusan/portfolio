@@ -107,9 +107,11 @@ const Window = (props: WindowPropsType) => {
           </div>
         </div>
       </div>
-      <div className=" mt-4 text-center max-w-prose mx-auto">
-        <p className="text-lg">{props.description}</p>
-      </div>
+      {getUrl ? (
+        <div className=" mt-4 text-center max-w-prose mx-auto">
+          <p className="text-lg px-2">{props.description}</p>
+        </div>
+      ) : null}
       <div className="spacer"></div>
     </div>
   );
