@@ -101,27 +101,7 @@ const ContactForm = (props: CtaContentPropType) => {
           Email
         </label>
       </div>
-      <div className="relative flex flex-col w-full">
-        <input
-          className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-darkColor border-2 border-white"
-          type="text"
-          name="website"
-          id="website"
-          autoCapitalize="none"
-          autoCorrect="off"
-          onChange={(e) => valueHandler(e)}
-        />
-        <label
-          className={`font-cubano absolute bg-darkColor left-4 px-2 transition-all duration-200 ease-linear peer-focus:-top-1 peer-focus:text-sm ${
-            inputChecker("website")
-              ? "top-1/2 -translate-y-1/2"
-              : "-translate-y-1/2"
-          }`}
-          htmlFor="website"
-        >
-          Company Website
-        </label>
-      </div>
+
       <div className="relative flex flex-col w-full">
         <textarea
           className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-darkColor border-2 border-white"
