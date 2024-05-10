@@ -3,8 +3,8 @@ import AnimationContainer from "../AnimationContainer";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-full ">
-      <div className="wrapper relative">
+    <div className="w-full h-full">
+      <div className="wrapper relative mt-10">
         <AnimationContainer direction="fromTop">
           <h1 className="font-extrabold font-cubano text-center text-6xl mb-8">
             <span className="inline-block -translate-y-1">Yo</span>ur
@@ -17,8 +17,12 @@ const HeroSection = () => {
           </h1>
         </AnimationContainer>
         <AnimationContainer direction={"fromTop"} delay={"delay-300"}>
-          <p className="text-2xl font-cubano max-w-prose text-center mx-auto mb-4">
+          <p className="relative text-2xl font-cubano max-w-prose text-center mx-auto ">
             Hey there, I&apos;m Dusan!
+          </p>
+          <p className="font-mona text-quaternaryAccent text-sm text-center mb-4">
+            ( It&apos;s actualy Dušan, but I chose the font with ugly letter
+            &apos;š&apos;. Great job!)
           </p>
           <p className="text-lg max-w-prose text-center mx-auto">
             Sadly, my designer got ill while I was crafting this{" "}
@@ -28,7 +32,7 @@ const HeroSection = () => {
           <p className="text-xl font-cubano max-w-prose text-center mx-auto">
             But worry not!
           </p>
-          <p className="text-lg max-w-prose text-center mx-auto mb-4">
+          <p className="text-lg max-w-prose text-center mx-auto">
             You can feast your eyes on some of masterpieces I designed and
             created myself.
           </p>

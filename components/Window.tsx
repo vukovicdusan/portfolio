@@ -72,7 +72,7 @@ const Window = (props: WindowPropsType) => {
         {active ? null : (
           <button
             onClick={previewActivatorHandler}
-            className="btn-primary bg-quaternaryAccent absolute top-0 left-0 text-darkColor"
+            className="font-mona btn-primary bg-quaternaryAccent absolute top-0 left-0 text-darkColor"
           >
             Activate preview
           </button>

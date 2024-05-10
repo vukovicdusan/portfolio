@@ -4,7 +4,7 @@ import AnimationContainer from "../AnimationContainer";
 const AboutSection = () => {
   return (
     <div id="about" className="relative wrapper stack gap-10 max-w-prose">
-      <AnimationContainer direction={"fromTop"} delay={"delay-500"}>
+      <AnimationContainer direction={"fromTop"}>
         <h2 className="font-cubano text-5xl text-quaternaryAccent text-center">
           About <span className="inline-block -translate-y-1">me</span>
         </h2>

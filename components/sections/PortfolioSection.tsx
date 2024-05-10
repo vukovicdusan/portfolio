@@ -1,5 +1,6 @@
 import React from "react";
 import Window from "../Window";
+import AnimationContainer from "../AnimationContainer";
 
 const PortfolioSection = () => {
   let websitesArr = [
@@ -15,9 +16,11 @@ const PortfolioSection = () => {
   ];
   return (
     <div id="websites" className="sm:wrapper h-auto stack gap-10">
-      <h2 className="font-cubano text-5xl text-quaternaryAccent text-center">
-        Work
-      </h2>
+      <AnimationContainer direction={"fromTop"}>
+        <h2 className="font-cubano text-5xl text-quaternaryAccent text-center">
+          Work
+        </h2>
+      </AnimationContainer>
       {websitesArr.map((el, index) => (
         <Window key={index} url={el}></Window>
       ))}
