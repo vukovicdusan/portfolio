@@ -6,7 +6,7 @@ type WindowPropsType = {
 };
 
 const Window = (props: WindowPropsType) => {
-  const [show, setShow] = useState<boolean>(false);
+  const [getUrl, setGetUrl] = useState<boolean>(false);
   const [fade, setFade] = useState<boolean>(false);
   const [active, setActive] = useState<boolean>(false);
   const [resizeValue, setResizeValue] = useState<string>("100");
@@ -19,7 +19,7 @@ const Window = (props: WindowPropsType) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setShow(true);
+          setGetUrl(true);
           //   observer.unobserve(windowRef.current!);
         }
       });
@@ -29,7 +29,7 @@ const Window = (props: WindowPropsType) => {
       observer.observe(windowRef.current);
     }
 
-    if (show) {
+    if (getUrl) {
       setTimeout(() => {
         setFade(true);
       }, 500);
@@ -38,7 +38,7 @@ const Window = (props: WindowPropsType) => {
     return () => {
       observer.disconnect();
     };
-  }, [show]);
+  }, [getUrl]);
 
   let previewActivatorHandler = () => {
     setActive(true);
@@ -62,24 +62,24 @@ const Window = (props: WindowPropsType) => {
           style={{ width: resizeValue + "%", minWidth: "360px" }}
         >
           <iframe
-            className={`window w-full h-[70vh] outline-none ${
+            className={`window w-full min-h-[650px] outline-none ${
               active ? "" : "pointer-events-none"
             }`}
-            src={show ? props.url : ""}
+            src={getUrl ? props.url : ""}
             title="External Website"
           ></iframe>
         </div>
         {active ? null : (
           <button
             onClick={previewActivatorHandler}
-            className="font-mona btn-primary bg-quaternaryAccent absolute top-0 left-0 text-darkColor"
+            className="font-mona btn-primary bg-quaternaryAccent absolute top-0 left-0 text-darkColor z-10"
           >
             Activate preview
           </button>
         )}
 
-        <div className="absolute sm:flex flex-col justify-center items-center bottom-0 left-1/2 -translate-x-1/2 bg-quaternaryAccent py-2 px-4 rounded-md hidden">
-          <label htmlFor="resize-control" className="font-bold text-darkColor">
+        <div className="absolute sm:flex flex-col justify-center items-center bottom-0 left-1/2 -translate-x-1/2 bg-quaternaryAccent py-2 px-4 rounded-md hidden z-10">
+          <label htmlFor="resize-control" className="font-mona text-darkColor">
             Resize window
           </label>
           <input
