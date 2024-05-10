@@ -1,17 +1,26 @@
 import React from "react";
 
-const Spinner = () => {
+type SpinnerPropTypes = {
+  wrapperClasses?: string;
+  svgClasses?: string;
+  svgName?: string;
+};
+
+const Spinner = (props: SpinnerPropTypes) => {
   return (
-    <div className="animate-spin w-max">
-      {/* <Image
-        className="invert"
-        alt="rocket"
-        src={rocket}
-        width={30}
-        height={30}
-      ></Image> */}
-      <svg className="w-10 h-10 fill-quaternaryAccent">
-        <use xlinkHref={`./images/sprite.svg#smiley`}></use>
+    <div className={`w-max ${props.wrapperClasses && props.wrapperClasses}`}>
+      <svg
+        className={`animate-spin ${
+          props.svgClasses
+            ? props.svgClasses
+            : "w-10 h-10 fill-quaternaryAccent"
+        }`}
+      >
+        <use
+          xlinkHref={`./images/sprite.svg#${
+            props.svgName ? props.svgName : "smiley"
+          }`}
+        ></use>
       </svg>
     </div>
   );
