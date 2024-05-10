@@ -54,12 +54,12 @@ const Window = (props: WindowPropsType) => {
     <div>
       <div
         ref={windowRef}
-        className={`relative  ${
+        className={`${
           fade ? "opacity-100" : "opacity-0"
         } transition-opacity duration-1000`}
       >
         <div
-          className="mx-auto"
+          className="relative mx-auto"
           style={{ width: resizeValue + "%", minWidth: "360px" }}
         >
           <iframe
@@ -69,40 +69,42 @@ const Window = (props: WindowPropsType) => {
             src={getUrl ? props.url : ""}
             title="External Website"
           ></iframe>
-        </div>
-        {active ? (
-          <a
-            href={props.url}
-            className="btn-primary bg-quaternaryAccent absolute top-0 left-0 text-darkColor font-mona z-10"
-            rel="noopener"
-            target="__blank"
-          >
-            Go to the site
-          </a>
-        ) : (
-          <button
-            onClick={previewActivatorHandler}
-            className="font-mona btn-primary bg-quaternaryAccent absolute top-0 left-0 text-darkColor z-10"
-          >
-            Activate preview
-          </button>
-        )}
-
-        <div className="absolute sm:flex flex-col justify-center items-center bottom-0 left-1/2 -translate-x-1/2 bg-quaternaryAccent py-2 px-4 rounded-md hidden z-10">
-          <label htmlFor="resize-control" className="font-mona text-darkColor">
-            Resize window
-          </label>
-          <input
-            onChange={(e) => resizeControlHandler(e)}
-            id="resize-control"
-            type="range"
-            min="30"
-            max="100"
-            // value="100"
-            // value={resizeValue}
-            step="1"
-            defaultValue={100}
-          />
+          {active ? (
+            <a
+              href={props.url}
+              className="btn-primary bg-quaternaryAccent absolute top-0 left-0 text-darkColor font-mona z-10"
+              rel="noopener"
+              target="__blank"
+            >
+              Go to the site
+            </a>
+          ) : (
+            <button
+              onClick={previewActivatorHandler}
+              className="font-mona btn-primary bg-quaternaryAccent absolute top-0 left-0 text-darkColor z-10"
+            >
+              Activate preview
+            </button>
+          )}
+          <div className="absolute sm:flex flex-col justify-center items-center bottom-0 left-1/2 -translate-x-1/2 bg-quaternaryAccent py-2 px-4 rounded-md hidden z-10">
+            <label
+              htmlFor="resize-control"
+              className="font-mona text-darkColor"
+            >
+              Resize window
+            </label>
+            <input
+              onChange={(e) => resizeControlHandler(e)}
+              id="resize-control"
+              type="range"
+              min="30"
+              max="100"
+              // value="100"
+              // value={resizeValue}
+              step="1"
+              defaultValue={100}
+            />
+          </div>
         </div>
       </div>
       <div className=" mt-4 text-center max-w-prose mx-auto">
