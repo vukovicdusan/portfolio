@@ -21,7 +21,7 @@ const AboutSection = () => {
           </p>
         </div>
       </AnimationContainer>
-      <div className="mx-auto w-24 h-1 my-12 bg-gradient-to-r from-gray5 to-gray4 rounded-full"></div>
+      <div className="spacer"></div>
       <AnimationContainer direction={"fromTop"}>
         <div className="stack text-center">
           <h3 className="text-lg font-cubano mb-2">
@@ -35,7 +35,7 @@ const AboutSection = () => {
             your content, making it straightforward, light, and easy to use.
           </p>
         </div>
-        <div className="mx-auto w-24 h-1 my-12 bg-gradient-to-r from-gray5 to-gray4 rounded-full"></div>
+        <div className="spacer"></div>
       </AnimationContainer>
       <AnimationContainer direction={"fromTop"}>
         <div className="stack text-center">
@@ -52,7 +52,7 @@ const AboutSection = () => {
             Your content must be delivered to the user no mather what.{" "}
           </p>
         </div>
-        <div className="mx-auto w-24 h-1 my-12 bg-gradient-to-r from-gray5 to-gray4 rounded-full"></div>
+        <div className="spacer"></div>
       </AnimationContainer>
       <AnimationContainer direction={"fromTop"}>
         <div className="stack text-center">
@@ -85,7 +85,7 @@ const AboutSection = () => {
             JS.
           </p>
         </div>
-        <div className="mx-auto w-24 h-1 my-12 bg-gradient-to-r from-gray5 to-gray4 rounded-full"></div>
+        <div className="spacer"></div>
       </AnimationContainer>
       <AnimationContainer direction={"fromTop"}>
         <div className="stack text-center">

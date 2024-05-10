@@ -92,4 +92,8 @@ input[type="range"]::-moz-range-track {
   .stack {
     @apply flex flex-col gap-2;
   }
+
+  .spacer {
+    @apply mx-auto w-24 h-1 my-12 bg-gradient-to-r from-gray5 to-gray4 rounded-full;
+  }
 }

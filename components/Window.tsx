@@ -96,9 +96,10 @@ const Window = (props: WindowPropsType) => {
           />
         </div>
       </div>
-      <div className="mb-24 mt-4 text-center max-w-prose mx-auto">
+      <div className=" mt-4 text-center max-w-prose mx-auto">
         <p className="text-lg">{props.description}</p>
       </div>
+      <div className="spacer"></div>
     </div>
   );
 };
