@@ -60,18 +60,22 @@ const AboutSection = () => {
             My tech <span className="text-quinaryAccent text-4xl">stack</span>
           </h3>
           <ul className="list-disc list-inside font-cubano">
-            <li>Vanilla</li>
-            <li>React</li>
+            <li>Vanilla html css and JavaScript</li>
+            <li>React with Typescript</li>
             <li>Wordpress</li>
           </ul>
           <p className="font-cubano font-lg">
             Looks so simple, doesn&apos;t it?
           </p>
           <p>
-            I prefer <span className="font-cubano text-lg">React</span>, it
-            gives me freedom. There&apos;s a large ecosystem around it, and I
-            have plenty of my own already-built, used, and tried solutions. But
-            it is not suitable for every job.
+            I prefer <span className="font-cubano text-lg">React</span> with
+            Typescript, it gives me freedom. There&apos;s a large ecosystem
+            around it, and I have plenty of my own already-built, used, and
+            tried solutions.{" "}
+            <span className="font-cubano text-lg">Typescript</span> is so good
+            and helpful that once you get the hang of it, you&apos;ll find
+            yourself using it even on smaller projects like this one. But
+            neither React nor TypeScript are suitable for every job.
           </p>
           <p>
             To the rescue comes
