@@ -132,7 +132,10 @@ const AboutSection = () => {
           </a>
         </div>
       </AnimationContainer>
-      <svg className="absolute fill-slate-800 opacity-30 right-1/4 top-1/3 h-full w-full animate-spin-slow -z-10 ">
+      <svg className="absolute fill-slate-800 opacity-30 left-1/4 -top-20 h-full w-full animate-spin-slow -z-10 ">
+        <use xlinkHref={`./images/sprite.svg#no-thumb`}></use>
+      </svg>
+      <svg className="absolute fill-slate-800 opacity-30 right-1/4 top-2/4 h-full w-full animate-spin-slow -z-10 ">
         <use xlinkHref={`./images/sprite.svg#smiley-2`}></use>
       </svg>
     </div>

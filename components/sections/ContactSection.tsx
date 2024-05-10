@@ -4,7 +4,10 @@ import AnimationContainer from "../AnimationContainer";
 
 const ContactSection = () => {
   return (
-    <div id="contact" className="wrapper">
+    <div id="contact" className="relative wrapper">
+      <svg className="absolute fill-slate-800 opacity-30 left-1/4 -top-96 h-full w-full animate-spin-slow -z-10 ">
+        <use xlinkHref={`./images/sprite.svg#thumb`}></use>
+      </svg>
       <div className="stack gap-4 max-w-prose mx-auto mb-10 text-center">
         <AnimationContainer direction={"fromTop"}>
           <h2 className="font-cubano text-5xl text-secondaryAccent">
