@@ -100,14 +100,23 @@ const AboutSection = () => {
             <li>
               Smooth js animations{" "}
               <span className="font-mona text-sm block">
-                (Check the jumping pointer down below! Exquisite, I know!)
+                (Check the jumping{" "}
+                <a
+                  href="#pointer"
+                  className="font-cubano underline text-quinaryAccent"
+                >
+                  pointer
+                </a>{" "}
+                down below! Exquisite, I know!)
               </span>
             </li>
             <li>Redux</li>
             <li>Styled components</li>
             <li>Git</li>
             <li>GatsbyJS</li>
-            <li>Yes, I just wanted a list to look longer</li>
+            <li>Yes, I just wanted</li>
+            <li>this list to</li>
+            <li>look longer</li>
           </ul>
         </div>
         <div className="spacer"></div>
@@ -120,7 +129,10 @@ const AboutSection = () => {
             <span className="text-quaternaryAccent text-lg"> hire me</span>!
           </p>
           <div className="animate-bounce">
-            <svg className="fill-white w-10 h-10 rotate-180 inline-block my-4 ">
+            <svg
+              id="pointer"
+              className="fill-white w-10 h-10 rotate-180 inline-block my-4 "
+            >
               <use xlinkHref={`./images/sprite.svg#pointer`}></use>
             </svg>
           </div>
