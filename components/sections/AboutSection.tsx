@@ -59,10 +59,10 @@ const AboutSection = () => {
           <h3 className="text-lg font-cubano mb-2">
             My tech <span className="text-quinaryAccent text-4xl">stack</span>
           </h3>
-          <ul className="list-disc list-inside">
-            <li className="font-cubano">Vanilla</li>
-            <li className="font-cubano">React</li>
-            <li className="font-cubano">Wordpress</li>
+          <ul className="list-disc list-inside font-cubano">
+            <li>Vanilla</li>
+            <li>React</li>
+            <li>Wordpress</li>
           </ul>
           <p className="font-cubano font-lg">
             Looks so simple, doesn&apos;t it?
@@ -84,6 +84,31 @@ const AboutSection = () => {
             <span className="font-cubano text-lg">vanilla</span> HTML, CSS, &
             JS.
           </p>
+          <p>
+            Ofcourse there are other tools in the toolbox of every developer:
+          </p>
+          <ul className="list-disc list-inside font-cubano">
+            <li>
+              Photoshop/Gimp{" "}
+              <span className="font-mona text-sm block">
+                (I prefer GIMP because I&apos;m a Linux user and a cheapskate)
+              </span>
+            </li>
+            <li>Bootstrap</li>
+            <li>Figma</li>
+            <li>Tailwind</li>
+            <li>
+              Smooth js animations{" "}
+              <span className="font-mona text-sm block">
+                (Check the jumping pointer down below! Exquisite, I know!)
+              </span>
+            </li>
+            <li>Redux</li>
+            <li>Styled components</li>
+            <li>Git</li>
+            <li>GatsbyJS</li>
+            <li>Yes, I just wanted a longer list</li>
+          </ul>
         </div>
         <div className="spacer"></div>
       </AnimationContainer>
