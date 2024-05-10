@@ -70,7 +70,16 @@ const Window = (props: WindowPropsType) => {
             title="External Website"
           ></iframe>
         </div>
-        {active ? null : (
+        {active ? (
+          <a
+            href={props.url}
+            className="btn-primary bg-quaternaryAccent absolute top-0 left-0 text-darkColor font-mona z-10"
+            rel="noopener"
+            target="__blank"
+          >
+            Go to the site
+          </a>
+        ) : (
           <button
             onClick={previewActivatorHandler}
             className="font-mona btn-primary bg-quaternaryAccent absolute top-0 left-0 text-darkColor z-10"
