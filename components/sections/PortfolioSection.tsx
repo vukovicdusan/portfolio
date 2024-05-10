@@ -51,7 +51,7 @@ const PortfolioSection = () => {
     },
   ];
   return (
-    <div id="websites" className="sm:wrapper h-auto stack gap-10">
+    <div id="websites" className="sm:wrapper h-auto stack gap-10 !mb-0">
       <AnimationContainer direction={"fromTop"}>
         <div className="stack">
           <h2 className="font-cubano text-5xl text-quaternaryAccent text-center">
