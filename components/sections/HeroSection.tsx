@@ -21,8 +21,8 @@ const HeroSection = () => {
             Hey there, I&apos;m Dusan!
           </p>
           <p className="font-mona text-quaternaryAccent text-sm text-center mb-4">
-            ( It&apos;s actualy Dušan, but I chose the font with ugly letter
-            &apos;š&apos;. Good job!{" "}
+            ( It&apos;s actually Dušan, but I chose the font with the ugly
+            letter &apos;š&apos;. Good job!{" "}
             <svg className="fill-quaternaryAccent w-6 h-6 inline-block -translate-y-1">
               <use xlinkHref={`./images/sprite.svg#thumb`}></use>
             </svg>
