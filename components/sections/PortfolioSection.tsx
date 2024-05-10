@@ -55,7 +55,7 @@ const PortfolioSection = () => {
       <AnimationContainer direction={"fromTop"}>
         <div className="stack">
           <h2 className="font-cubano text-5xl text-quaternaryAccent text-center">
-            Work
+            Wo<span className="inline-block -translate-y-1">rk</span>
           </h2>
           <p className="max-w-prose text-center mx-auto">
             This is some of my work that I have permission to display as my own.

@@ -8,7 +8,8 @@ const ContactSection = () => {
       <div className="stack gap-4 max-w-prose mx-auto mb-10 text-center">
         <AnimationContainer direction={"fromTop"}>
           <h2 className="font-cubano text-5xl text-secondaryAccent">
-            Let&apos;s talk!
+            Let&apos;s ta<span className="inline-block -translate-y-1">lk</span>
+            !
           </h2>
         </AnimationContainer>
         <AnimationContainer direction={"fromTop"} delay={"delay-200"}>
