@@ -1,6 +1,6 @@
 "use client";
 import useInput from "@/hooks/useInput";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Spinner from "./Spinner";
 
 type TResponseState = {
@@ -19,11 +19,13 @@ type CtaContentPropType = {
 const ContactForm = (props: CtaContentPropType) => {
   const [inputValue, valueHandler] = useInput();
   const [loading, setLoading] = useState<boolean>(false);
-
   const [responseState, setResponseState] = useState<TResponseState>({
     message: "initial_state",
     success: false,
   });
+  const nameRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
 
   const onSubmitHandler = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -39,6 +41,9 @@ const ContactForm = (props: CtaContentPropType) => {
       });
       setResponseState(await response.json());
       setLoading(false);
+      if (nameRef.current) nameRef.current.value = "";
+      if (emailRef.current) emailRef.current.value = "";
+      if (messageRef.current) messageRef.current.value = "";
     } catch (err) {
       console.log(err);
     }
@@ -58,6 +63,7 @@ const ContactForm = (props: CtaContentPropType) => {
     >
       <div className="relative flex flex-col w-full">
         <input
+          ref={nameRef}
           className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-darkColor border-2 border-white"
           type="text"
           name="name"
@@ -80,6 +86,7 @@ const ContactForm = (props: CtaContentPropType) => {
       </div>
       <div className="relative flex flex-col w-full">
         <input
+          ref={emailRef}
           className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-darkColor border-2 border-white"
           type="text"
           name="email"
@@ -104,6 +111,7 @@ const ContactForm = (props: CtaContentPropType) => {
 
       <div className="relative flex flex-col w-full">
         <textarea
+          ref={messageRef}
           className="max-w-[99%] py-3 px-4 peer rounded-2xl bg-darkColor border-2 border-white"
           name="message"
           id="message"
