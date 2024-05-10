@@ -107,7 +107,7 @@ const AboutSection = () => {
             <li>Styled components</li>
             <li>Git</li>
             <li>GatsbyJS</li>
-            <li>Yes, I just wanted a longer list</li>
+            <li>Yes, I just wanted a list to look longer</li>
           </ul>
         </div>
         <div className="spacer"></div>

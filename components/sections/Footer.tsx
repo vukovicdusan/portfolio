@@ -2,6 +2,7 @@ import React from "react";
 import AnimationContainer from "../AnimationContainer";
 
 const Footer = () => {
+  let year = new Date().getFullYear();
   return (
     <footer className="wrapper pb-0 mb-0 text-center">
       <AnimationContainer direction={"fromTop"}>
@@ -25,7 +26,9 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <p className="text-xs text-gray-400">Copyright © 2024 DusanVukovic </p>
+        <p className="text-xs text-gray-400">
+          Copyright © {year} DusanVukovic{" "}
+        </p>
       </AnimationContainer>
     </footer>
   );
