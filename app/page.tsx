@@ -4,12 +4,14 @@ import Footer from "@/components/sections/Footer";
 import PortfolioSection from "@/components/sections/PortfolioSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ContactSection from "@/components/sections/ContactSection";
+import MouseBlob from "@/components/MouseBlob";
 
 export default function Home() {
   return (
     <>
       <Header></Header>
       <main className="relative flex min-h-screen flex-col items-center justify-between overflow-hidden">
+        <MouseBlob></MouseBlob>
         <HeroSection></HeroSection>
         <AboutSection></AboutSection>
         <PortfolioSection></PortfolioSection>
