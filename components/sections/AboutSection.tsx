@@ -1,12 +1,14 @@
 import React from "react";
 import AnimationContainer from "../AnimationContainer";
+import WordShuffler from "../WordShuffler";
 
 const AboutSection = () => {
   return (
     <div id="about" className="relative wrapper stack gap-10 max-w-prose">
       <AnimationContainer direction={"fromTop"}>
         <h2 className="font-cubano text-5xl text-quaternaryAccent text-center">
-          About <span className="inline-block -translate-y-1">me</span>
+          {/* About <span className="inline-block -translate-y-1">me</span> */}
+          <WordShuffler>About me</WordShuffler>
         </h2>
         <div className="stack text-center">
           <h3 className="text-lg font-cubano mb-2">

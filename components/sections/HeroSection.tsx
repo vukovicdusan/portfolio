@@ -1,5 +1,6 @@
 import React from "react";
 import AnimationContainer from "../AnimationContainer";
+import WordShuffler from "../WordShuffler";
 
 const HeroSection = () => {
   return (
@@ -7,13 +8,16 @@ const HeroSection = () => {
       <div className="wrapper relative mt-10">
         <AnimationContainer direction="fromTop">
           <h1 className="font-extrabold font-cubano text-center text-6xl mb-8">
-            <span className="inline-block -translate-y-1">Yo</span>ur
+            {/* <span className="inline-block -translate-y-1">Yo</span>ur */}
+            <WordShuffler>Your</WordShuffler>
             <br />
             <span className="text-tertiaryAccent">
-              <span className="inline-block translate-y-1">Front</span>-End
+              {/* <span className="inline-block translate-y-1">Front</span>-End */}
+              <WordShuffler>Front-End</WordShuffler>
             </span>
             <br />
-            <span className="inline-block -translate-y-1">Devel</span>oper
+            {/* <span className="inline-block -translate-y-1">Devel</span>oper */}
+            <WordShuffler>Developer</WordShuffler>
           </h1>
         </AnimationContainer>
         <AnimationContainer direction={"fromTop"} delay={"delay-300"}>
