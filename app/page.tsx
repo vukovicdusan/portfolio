@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <Header></Header>
+      <MouseBlob></MouseBlob>
       <main className="relative flex min-h-screen flex-col items-center justify-between overflow-hidden">
-        <MouseBlob></MouseBlob>
         <HeroSection></HeroSection>
         <AboutSection></AboutSection>
         <PortfolioSection></PortfolioSection>
