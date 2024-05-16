@@ -30,6 +30,12 @@ const PortfolioSection = () => {
       description:
         "I transitioned a portfolio website for a Serbian actress from WordPress to React with Next.js due to hosting considerations. This migration preserved the original design and content while leveraging the advantages of React and Next.js for enhanced performance and flexibility. The WordPress version was also developed and designe by me beforehand.",
     },
+
+    {
+      url: "https://shift-manager-blue.vercel.app/",
+      description:
+        "This is a test copy of a shift management app that I developed for a company based in Belgrade, which collaborates with a transportation company in London. The app was built using React and Next.js.",
+    },
     {
       url: "https://www.nutrilogika.rs/",
       description:
