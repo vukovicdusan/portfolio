@@ -34,7 +34,7 @@ const PortfolioSection = () => {
     {
       url: "https://shift-manager-blue.vercel.app/",
       description:
-        "This is a test copy of a shift management app that I developed for a company based in Belgrade, which collaborates with a transportation company in London. The app was built using React and Next.js.",
+        "This is a test copy of a shift management app I developed for a Belgrade-based company, in collaboration with a transportation firm in London. Admins can add workers and enable overtime requests, which are then reflected in the calendar. The app was built using React and Next.js.",
     },
     {
       url: "https://www.nutrilogika.rs/",
