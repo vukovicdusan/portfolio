@@ -66,7 +66,8 @@ const PortfolioSection = () => {
             This is some of my work that I have permission to display as my own.
             Much of my work involves tasks such as fixing, correcting,
             improving, and adding animations to websites owned by others and
-            done by/for others.
+            created by or for others, but these websites were completed entirely
+            by me, from top to bottom.
           </p>
         </div>
       </AnimationContainer>
