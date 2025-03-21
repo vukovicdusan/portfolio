@@ -47,7 +47,7 @@ const PortfolioSection = () => {
         "I crafted a already designed portfolio website for a web analytics consultant specialist using React with Gatsby during the peak of Gatsby's popularity. The website effectively showcased the consultant's expertise while leveraging the advanced capabilities of Gatsby for optimal performance and user experience.",
     },
     {
-      url: "https://www.thedatawiz.co/",
+      url: "https://datawizanalytics.com/",
       description:
         "I designed and developed a portfolio website for a web analytics consultancy. The website effectively showcases the consultancy's expertise in web analytics, providing visitors with insights into their services, methodologies, and success stories.",
     },
