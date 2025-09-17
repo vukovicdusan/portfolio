@@ -52,9 +52,9 @@ const PortfolioSection = () => {
         "I designed and developed a portfolio website for a web analytics consultancy. The website effectively showcases the consultancy's expertise in web analytics, providing visitors with insights into their services, methodologies, and success stories.",
     },
     {
-      url: "https://www.sandracvijovic.com/",
+      url: "https://www.kodtetke.com/",
       description:
-        "I created a small and quick WordPress portfolio website for a talented artist based in Belgrade. The website features custom image uploading functionality and a lightbox gallery made with Advanced Custom Fields (ACF), allowing for a visually engaging showcase of the artist's work.",
+        "Small Wordpress website and a shop for a small business that sells handmade embroidered, knitted, and crocheted products for home decor.",
     },
   ];
   return (
