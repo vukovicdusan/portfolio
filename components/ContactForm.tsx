@@ -130,6 +130,14 @@ const ContactForm = (props: CtaContentPropType) => {
           Message
         </label>
       </div>
+      <div className="h-0 w-0 overflow-hidden absolute">
+        <input 
+          tabIndex={-1}
+          type="text"
+          name="website"
+          autoComplete="off"
+        />
+      </div>
       {responseState.message !== "initial_state" ? (
         <p
           className={`font-bold text-center ${
