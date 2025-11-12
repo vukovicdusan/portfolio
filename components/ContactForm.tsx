@@ -29,6 +29,7 @@ const ContactForm = (props: CtaContentPropType) => {
 
   const onSubmitHandler = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if(inputValue.website) return;
     try {
       setLoading(true);
       const response = await fetch("/api/contact", {
